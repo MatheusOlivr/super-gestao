@@ -3,9 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',"PrincipalController@principal");
-Route::get('/sobreNos',function() {
-    return "sobreNos";
-});
-Route::get("contato",function() {
-    return "contato";
-});
+Route::get('/sobreNos',"SobreNosController@sobreNos");
+Route::get("contato","ContatoController@contato");
